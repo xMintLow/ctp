@@ -1,0 +1,591 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding-top: 70px; /* Ajustar según la altura del encabezado */
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+}
+.logo img {
+    max-width: 150px; /* Tamaño máximo */
+    height: auto;
+}
+.logo {
+    flex: 1;
+}
+
+.menu-toggle {
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        max-width: 120px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between; /* Distribuye el logo y el botón */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        display: block; /* Siempre visible */
+    }
+
+    nav, .search-icon {
+        display: none; /* Oculta la navegación y el icono de búsqueda */
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #2e7d32;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        color: white;
+        background-color: #388e3c;
+    }
+}
+
+/* Encabezado fijo */
+.header {
+    background-color: #2e7d32;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    position: fixed; /* Hace que el encabezado permanezca fijo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Se asegura de que el encabezado esté sobre el contenido */
+}
+
+/* Navegación interactiva */
+.navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #388e3c;
+}
+
+.navigation a.active {
+    background-color: #008000;
+    color: white;
+}
+
+/* Contenedores de contenido */
+.content-blocks {
+    padding: 20px;
+}
+
+.content-block {
+    display: none;
+}
+
+.content-block.active {
+    display: block;
+}
+
+/* Imagen Responsiva */
+.responsive-image {
+    width: 100%;
+    text-align: center;
+}
+
+.responsive-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Título centrado */
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Bloque de imágenes */
+.image-block {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería de Imágenes en 3x3 */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.image-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Pie de Página */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+/* Centrar título */
+/* Centrar título */
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Bloque contenedor de imágenes */
+.image-block {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería de Imágenes en 3x3 con bloques */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Cada imagen dentro de su bloque */
+.image-item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.image-item:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustar las imágenes dentro del bloque */
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Texto centrado dentro de cada imagen */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Contenedor flexbox para organizar texto e imagen */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Bloque de texto alineado a la izquierda */
+.text-block {
+    width: 60%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen al lado derecho */
+.image-block img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.content-container {
+    margin-top: 80px; /* Ajusta este valor según la altura del encabezado */
+}
+
+
+
+h1 {
+    text-align: center; /* Centra el título */
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e7d32; /* Color verde oscuro */
+}
+/* Estilos para la navegación desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón de navegación */
+.dropbtn {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Contenedor de contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+/* Estilos para los enlaces dentro de la pestaña flotante */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efecto al pasar el mouse sobre las opciones */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar la pestaña flotante al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Contenedor flexbox para imagen y formulario */
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Imagen alineada a la izquierda */
+.image-block {
+    width: 40%;
+    text-align: left;
+}
+
+.image-block img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Formulario alineado a la derecha */
+.contact-form {
+    width: 55%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #2e7d32;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #388e3c;
+}
+/* Contenedor flexbox */
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Imagen independiente */
+.contact-image {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Bloque del formulario a la derecha */
+.contact-form {
+    width: 55%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Ajustar el tamaño de las imágenes */
+.content-container img {
+    width: 70%; /* Ajusta este porcentaje según lo que necesites */
+    max-width: 300px; /* Puedes establecer un límite máximo */
+    display: block;
+    margin: auto; /* Centra la imagen */
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-block, .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .dropdown-content {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 5px;
+        justify-content: center;
+    }
+    
+    .image-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-text {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-block, .contact-form {
+        width: 90%;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.content-container {
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+}

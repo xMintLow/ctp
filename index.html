@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado CTP Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Encabezado Interactivo -->
+    <header class="header">
+        <div class="logo">
+            <img src="lexo1bla.png" alt="Centro Tecnológico del Perú Logo">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" data-block="inicio">INICIO</a></li>
+                <li><a href="somos.html" data-block="somos-ctp">SOMOS CTP</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">CARRERAS TÉCNICAS</a>
+                    <div class="dropdown-content">
+                        <a href="carrera-administracion.html">Administración Bancaria</a>
+                        <a href="carrera-computacion.html">Computación y Soluciones Informáticas</a>
+                        <a href="carrera-construccion.html">Construcción Civil y Topografía</a>
+                        <a href="carrera-mecanica-pesada.html">Mecánica de Equipos Pesados</a>
+                        <a href="carrera-transporte.html">Transporte Terrestre y Operación de Equipos Pesados</a>
+                        <a href="carrera-mecatronica.html">Mecatrónica Automotriz</a>
+                        <a href="carrera-electronica-motos.html">Mecánica y Electrónica de Motos</a>
+                        <a href="carrera-moda.html">Diseño de Modas y Confección Textil</a>
+                        <a href="carrera-estetica.html">Estética Personal y Cosmetología</a>
+                    </div>
+                </li>
+                <li><a href="sedes.html" data-block="sedes">SEDES</a></li>
+                <li><a href="noticias.html" data-block="noticias">NOTICIAS</a></li>
+                <li><a href="contactos.html" data-block="contactenos">CONTÁCTENOS</a></li>
+            </ul>
+        </nav>
+        <span class="search-icon">&#128269;</span>
+        <button class="menu-toggle">&#9776;</button>
+
+    </header>
+
+    <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+
+    <!-- Imagen Responsiva -->
+    <section class="image-section">
+        <div class="responsive-image">
+            <img src="image.png" alt="Imagen Responsiva">
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes 3x3 (No Responsivas) -->
+    <section class="grid-section">
+        <h2 class="section-title">Nuestras Especialidades</h2>
+        
+            <div class="image-grid">
+                <a href="carrera-mecatronica.html">
+                <div class="image-item">
+                    <img src="image copy.png" alt="Mecatrónica Automotriz">
+                    <div class="image-text">MECATRÓNICA AUTOMOTRIZ</div>
+                </div>
+                </a>
+                <div class="image-item">
+                    <img src="image copy 2.png" alt="Estética Personal y Cosmetología">
+                    <div class="image-text">ESTÉTICA PERSONAL Y COSMETOLOGÍA</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 3.png" alt="Mecánica y Electrónica de Motos">
+                    <div class="image-text">MECÁNICA Y ELECTRÓNICA DE MOTOS</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 4.png" alt="Mecánica de Maquinaria Pesada">
+                    <div class="image-text">MECÁNICA DE MAQUINARIA PESADA</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 5.png" alt="Transporte Terrestre y Operación de Maquinaria Pesada">
+                    <div class="image-text">TRANSPORTE TERRESTRE Y OPERACIÓN DE MAQUINARIA PESADA</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 6.png" alt="Construcción Civil y Topografía">
+                    <div class="image-text">CONSTRUCCIÓN CIVIL Y TOPOGRAFÍA</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 7.png" alt="Diseño de Modas y Confección Textil">
+                    <div class="image-text">DISEÑO DE MODAS Y CONFECCIÓN TEXTIL</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 8.png" alt="Computación y Soluciones Informáticas">
+                    <div class="image-text">COMPUTACIÓN Y SOLUCIONES INFORMÁTICAS</div>
+                </div>
+                <div class="image-item">
+                    <img src="image copy 9.png" alt="Administración Bancaria">
+                    <div class="image-text">ADMINISTRACIÓN BANCARIA</div>
+                </div>  
+        </div>
+    </section>
+    <section class="form-container">
+        
+            <img src="image copy 13.png" alt="Contáctanos">
+        
+    
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <form action="procesar-formulario.php" method="POST">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+    
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+    
+                <label for="motivo">Motivo:</label>
+                <select id="motivo" name="motivo">
+                    <option value="consulta">Consulta</option>
+                    <option value="inscripcion">Inscripción</option>
+                    <option value="informacion">Solicitud de Información</option>
+                    <option value="otro">Otro</option>
+                </select>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+
+
+    <!-- Pie de Página -->
+    
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>SEDES</h3>
+            <ul>
+                <li><strong>PICHANAKI:</strong> Av. Micaela Bastidas 490 - (frente a la Plaza de Armas) Cel: 917 837 301</li>
+                <li><strong>LA MERCED:</strong> Calle Los Pioneros 114 - Pampa del Carmen Cel: 900 184 180</li>
+                <li><strong>PUERTO BERMÚDEZ:</strong> Colegio Remigio Morales Bermúdez Cel: 980 830 306</li>
+                <li><strong>MAZAMARI:</strong> Jr. San Juan 331 Cel: 935 679 698</li>
+                <li><strong>PANGOA:</strong> Av. Los Cafetaleros y Calle 28 de Julio Cel: 900 887 305</li>
+                <li><strong>SATIPO:</strong> Jr. Agricultura y Ricardo Palma Cel: 926 452 132</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>CONTÁCTANOS</h3>
+            <p>Email: <a href="mailto:adminision@ctp.edu.pe">adminision@ctp.edu.pe</a></p>
+            <p>Horario de atención: <strong>Lun - Sab / 8:00 am a 6:00 pm</strong></p>
+        </div>
+
+        <div class="copyright">
+            © Copyright 2025. Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

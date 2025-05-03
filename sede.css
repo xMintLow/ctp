@@ -1,0 +1,50 @@
+.sedes-section {
+    text-align: center;
+    padding: 80px 20px; /* Mayor separación */
+    background-color: #f8f8f8;
+}
+
+.sedes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Más grandes */
+    gap: 40px; /* Mayor espacio entre bloques */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sede {
+    background-color: white;
+    padding: 30px; /* Texto más espacioso */
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sede h2 {
+    color: #2e7d32;
+    font-size: 26px; /* Tamaño más grande */
+    margin-bottom: 10px;
+}
+
+.sede p {
+    font-size: 18px; /* Texto más legible */
+    color: #444;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .sedes-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .sede {
+        padding: 25px;
+    }
+
+    .sede h2 {
+        font-size: 24px;
+    }
+
+    .sede p {
+        font-size: 16px;
+    }
+}

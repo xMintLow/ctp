@@ -1,0 +1,106 @@
+/* Sección de Administración Bancaria */
+.bancaria-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+/* Contenedor principal */
+.bancaria-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Imagen de la carrera */
+.bancaria-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Texto informativo */
+.bancaria-text {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Beneficios */
+.benefits-title {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-top: 40px;
+}
+
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Imagen de Administración Bancaria */
+.bancaria-image img {
+    width: 100%;
+    max-width: 10000px; /* Imagen más grande */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Imagen de Beneficios */
+.benefits-image img {
+    width: 100%;
+    max-width: 10000px; /* También más grande */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Texto de beneficios */
+.benefits-text {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Estilos para h1 */
+.bancaria-section h1 {
+    font-size: 32px; /* Tamaño más grande */
+    font-weight: bold;
+    color: #2e7d32;
+    text-align: center;
+    margin-top: 100px; /* Espacio suficiente para evitar que quede detrás del encabezado */
+}
+
+/* Ajuste general para dispositivos móviles */
+@media (max-width: 768px) {
+    .bancaria-section h1 {
+        font-size: 28px; /* Tamaño adaptado */
+        margin-top: 120px; /* Espacio mayor en móviles */
+    }
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .bancaria-text, .benefits-text {
+        width: 95%;
+        padding: 20px;
+    }
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .bancaria-image img, .benefits-image img {
+        max-width: 100%;
+    }
+}
+}
